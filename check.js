@@ -33,7 +33,7 @@ function overlayControl() {
                             "left: 0;" +
                             "right: 0;" +
                             "bottom: 0;" +
-                            "background-color: rgba(100,89,77,0.3);" +
+                            "background-color: rgba(255,215,0,0.3);" +
                             "z-index: 999999999999;" +
                             "display: block;" +
                             "pointer-events: none;";
