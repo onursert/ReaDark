@@ -1,0 +1,24 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f2f2f2;
+  color: darkslategray;
+  padding: 3rem;
+}
+.content-container {
+    padding: 3rem;
+	width: 50%;
+	margin: 3rem auto;
+	background-color: #fff;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+	border-radius: .3rem;
+}
+.center {
+  text-align: center;
+}
+a {
+  font-size: 20px;
+  border-radius: .2rem;
+  color: darkslategray;
+  text-align: center;
+  display: block;
+}
