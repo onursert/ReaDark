@@ -56,14 +56,12 @@ function darkControl() {
             document.documentElement.style.filter = "invert(1)";
             document.documentElement.style.backgroundColor = "black";
             for (var i = 0; i < document.images.length; i++) { document.images[i].style.filter = "invert(1)"; }
-            var x = document.querySelectorAll('*'); for (var i = 0; i < x.length; i++) { if (x[i].style.backgroundImage !== '') { x[i].style.filter = 'invert(1)'; } }
             var x = document.querySelectorAll('video'); for (var i = 0; i < x.length; i++) { x[i].style.filter = 'invert(1)'; }
         }
         else {
             document.documentElement.style.filter = "invert(0)";
             document.documentElement.style.backgroundColor = "";
             for (var i = 0; i < document.images.length; i++) { document.images[i].style.filter = "invert(0)"; }
-            var x = document.querySelectorAll('*'); for (var i = 0; i < x.length; i++) { if (x[i].style.backgroundImage !== '') { x[i].style.filter = 'invert(0)'; } }
             var x = document.querySelectorAll('video'); for (var i = 0; i < x.length; i++) { x[i].style.filter = 'invert(0)'; }
         }
     });
