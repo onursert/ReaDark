@@ -58,6 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         code: "document.documentElement.style.backgroundColor = 'black';"
                     });
                     chrome.tabs.executeScript({
+                        code: "document.documentElement.style.height = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight) + 'px';"
+                    });
+                    chrome.tabs.executeScript({
                         code: "for (var i = 0; i < document.images.length; i++) { document.images[i].style.filter = 'invert(1)'; }"
                     });
                     chrome.tabs.executeScript({
