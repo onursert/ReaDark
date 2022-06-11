@@ -2,17 +2,17 @@
   "name": "ReaDark - Reading & Dark Mode",
   "short_name": "ReaDark",
   "description" : "ReaDark - Reading & Dark Mode for turning all websites in Chrome browser to reading or dark mode or both.",
-  "version": "1.3",
+  "version": "1.4",
   "options_page": "options.html",
-  "permissions": ["storage", "unlimitedStorage", "tabs", "activeTab"],
+  "permissions": ["storage", "unlimitedStorage", "scripting", "activeTab"],
   "content_scripts": [
     {
-      "run_at": "document_end",
+      "all_frames": true,
       "matches": ["*://*/*"],
       "js": ["check.js"]
     }
   ],
-  "browser_action": {
+  "action": {
     "default_title": "Reading & Dark Mode",
     "default_popup": "popup.html",
     "default_icon": {
@@ -28,5 +28,5 @@
     "48": "images/icon48.png",
     "128": "images/icon128.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
