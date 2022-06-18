@@ -2,7 +2,7 @@
   "name": "ReaDark - Reading & Dark Mode",
   "short_name": "ReaDark",
   "description" : "ReaDark - Reading & Dark Mode for turning all websites in Chrome browser to reading or dark mode or both.",
-  "version": "1.4",
+  "version": "1.5",
   "options_page": "options.html",
   "permissions": ["storage", "unlimitedStorage", "scripting", "activeTab"],
   "content_scripts": [
